@@ -17,10 +17,10 @@ $title = $result["items"][0]["snippet"]["title"];
 $thumbnails = $result["items"][0]["snippet"]["thumbnails"]["medium"]["url"];
 $subcribe = $result["items"][0]["statistics"]["subscriberCount"];
 
-$result = get_request("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiSTTltVQUgT4ge3FOQ5F0g&maxResults=1&order=date&key=AIzaSyBPH1DgOhtHRm2bJ0EPZJ8AafCnVzLfymE");
+$result1 = get_request("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiSTTltVQUgT4ge3FOQ5F0g&maxResults=1&order=date&key=AIzaSyBPH1DgOhtHRm2bJ0EPZJ8AafCnVzLfymE");
 
-$video_last = $result["items"][0]["id"]["videoId"];
-$title_video = $result["items"][0]["snippet"]["title"];
+$video_last = $result1["items"][0]["id"]["videoId"];
+$title_video = $result1["items"][0]["snippet"]["title"];
 ?>
 
 <!doctype html>
